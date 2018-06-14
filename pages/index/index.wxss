@@ -1,1 +1,17 @@
 /**index.wxss**/
+
+.item{
+  display:inline-block
+}
+.item_input{
+    display: inline-block;
+    overflow:visible;
+}
+.btn_con{
+  text-align: center;
+  padding: 30rpx 0;
+}
+.computed{
+    font-size:0.7rem;
+    padding:10rpx  20rpx;
+}
