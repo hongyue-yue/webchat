@@ -8,18 +8,23 @@
         </picker>
    </view>
    <view >
-          <view class="item">税前工资：{{salary}}</view>
+          <view class="item">税前工资:</view>
           <input  bindinput="bindSalaryInput" placeholder="税前工资" class="item_input"/>
    </view>
    <view >
-          <view class="item">缴费基准：{{payment}}</view>
-          <input  bindinput="bindSalaryInput" placeholder="缴费基准" class="item_input"/>
+          <view class="item">缴费基准:</view>
+          <input  bindinput="bindPaymentInput" placeholder="缴费基准" class="item_input"/>
    </view>
    <view class="btn_con">
-         <button type="primary" size="default	"  bindtap="primary" > 计算</button>
+         <button type="primary" size="default	"  bindtap="primary" bindtap="computed"> 计算</button>
    </view>
    <view>
        计算结果：
    </view>
-   <view class="computed"> 住房公积金：{{}}</view>
+   <view class="computed"> 住房公积金：{{computed.CPF}}</view>
+   <view class="computed"> 医保缴费：{{computed.Medicare}}</view>
+   <view class="computed"> 养老保险：{{computed.Pension}}</view>
+   <view class="computed"> 失业保险：{{computed.EI}}</view>
+   <view class="computed"> 个税：{{computed.Tax}}</view>
+   <view class="computed"> 税后所得：{{computed.total}}</view>
 </view>
